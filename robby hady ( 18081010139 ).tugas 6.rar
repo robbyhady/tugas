@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+int main(){ loop:
+	
+	int range [3][3][3];
+	int x, y, z;
+	double p_pq, p_qr, p_total;
+	int menu;
+	int loop=1;
+	
+	
+	system("cls");
+	while(loop==1)
+	{ 
+	
+	printf("======= pilihan ========\n");
+
+	printf("| 1. Masukkan Titik Koordinat          |\n");
+	printf("| 2. Hasil Hitung Panjang Lintasan     |\n");
+	printf("========================================\n");
+	printf("| Masukkan Pilihan Anda : ");scanf("%d",&menu);
+	
+		system("cls");
+	
+	
+	switch(menu){
+		
+		case 1:{
+			for(x=0;x<3;x++){
+				printf("================================\n");
+				printf("Titik Lintasan ke-%d\n",x+1);
+				printf("================================\n");
+				for(y=0;y<3;y++){
+					printf(" Koordinat X : ");
+						scanf("%d",&range[x][y][0]);
+					printf(" Koordinat Y : ");
+						scanf("%d",&range[x][y][1]);
+					printf(" Koordinat Z : ");
+						scanf("%d",&range[x][y][2]);
+				printf("--------------------------------\n");		
+				}
+				system("cls");
+			}
+				system("cls");
+	
+	
+	switch(menu){
+		
+		case 1:{
+			for(x=0;x<3;x++){
+				printf("================================\n");
+				printf("Titik Lintasan ke-%d\n",x+1);
+				printf("================================\n");
+				for(y=0;y<3;y++){
+					printf("Titik Koordinat X : ");
+						scanf("%d",&range[x][y][0]);
+					printf("Titik Koordinat Y : ");
+						scanf("%d",&range[x][y][1]);
+					printf("Titik Koordinat Z : ");
+						scanf("%d",&range[x][y][2]);
+				printf("--------------------------------\n");		
+				}
+				system("cls");
+			}
